@@ -2,11 +2,14 @@ import json  # can be replaced with orjson to speedup parsing
 import glob
 from jsonschema import Draft7Validator
 
-errors = []
+"""
+TODO:
+    - how to parallelize this properly?
+"""
 
 
 def validate(filename, data, output):
-    """ Validates json given with the schema provided """
+    """ Validates json given with the schema provided. """
 
     no_errors = True
 
@@ -32,6 +35,7 @@ def validate(filename, data, output):
             try:
                 schema = json.load(schema_file)
             except Exception as e:
+                #  if the schema is given as invalid json, we've got to know that somehow
                 print(e)
             finally:
                 if schema is not None:
@@ -59,6 +63,8 @@ def validate(filename, data, output):
     output.write('\n\n')
 
 
+errors = []
+
 if __name__ == '__main__':
     with open('README.md', 'w') as output_file:
         for filename in glob.glob('data/event/*.json'):
@@ -72,4 +78,6 @@ if __name__ == '__main__':
                     if json_data is not None:
                         validate(filename, json_data, output_file)
 
-    print(errors)  # it gave []. all json files consist of valid json data. let's validate
+    print(errors)  # json-parsing errors.
+    # it gave [] -> all json files consist of valid json data. let's validate with schemas.
+    # schema files are assumed to be valid by default.
