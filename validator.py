@@ -7,7 +7,7 @@ errors = []
 def validate(filename, data):
     with open('README.md', 'at') as output:
         output.write(
-            f'#### [{ filename }](https://raw.githubusercontent.com/fuzz88/welltory_test/master/data/event/{ filename })')
+            f'#### [{ filename }](https://raw.githubusercontent.com/fuzz88/welltory_test/master/{ filename })')
         output.write('\n\n')
         print(filename)
         print(data)
