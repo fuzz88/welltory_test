@@ -26,8 +26,6 @@ On instance['cmarkers']:
 
 'suprt marker' is not of type 'array'
 
-deque(['cmarkers'])
-
 ------END ERROR DESCRIPTION------
 
 ------BEGIN ERROR DESCRIPTION------
@@ -41,8 +39,6 @@ On instance['user_id']:
     None
 
 None is not of type 'integer'
-
-deque(['user_id'])
 
 ------END ERROR DESCRIPTION------
 
@@ -129,8 +125,6 @@ On instance:
 
 None is not of type 'object'
 
-deque([])
-
 ------END ERROR DESCRIPTION------
 
 
@@ -161,8 +155,6 @@ On instance['type_ranges'][29]:
 
 'type' is a required property
 
-deque(['type_ranges', 29])
-
 ------END ERROR DESCRIPTION------
 
 ------BEGIN ERROR DESCRIPTION------
@@ -179,8 +171,6 @@ On instance['type_ranges'][31]:
 
 'type' is a required property
 
-deque(['type_ranges', 31])
-
 ------END ERROR DESCRIPTION------
 
 ------BEGIN ERROR DESCRIPTION------
@@ -196,8 +186,6 @@ On instance['type_ranges'][33]:
     {'date': '2020-08-27T09:40:00-04:00'}
 
 'type' is a required property
-
-deque(['type_ranges', 33])
 
 ------END ERROR DESCRIPTION------
 
@@ -240,8 +228,6 @@ On instance['user_id']:
     'bad user id'
 
 'bad user id' is not of type 'integer'
-
-deque(['user_id'])
 
 ------END ERROR DESCRIPTION------
 
@@ -2560,8 +2546,6 @@ On instance:
 
 'unique_id' is a required property
 
-deque([])
-
 ------END ERROR DESCRIPTION------
 
 
@@ -2648,8 +2632,6 @@ On instance:
 
 'unique_id' is a required property
 
-deque([])
-
 ------END ERROR DESCRIPTION------
 
 ------BEGIN ERROR DESCRIPTION------
@@ -2730,8 +2712,6 @@ On instance:
 
 'user' is a required property
 
-deque([])
-
 ------END ERROR DESCRIPTION------
 
 ------BEGIN ERROR DESCRIPTION------
@@ -2811,8 +2791,6 @@ On instance:
      'timestamp': '2020-09-09T14:07:44'}
 
 'user_id' is a required property
-
-deque([])
 
 ------END ERROR DESCRIPTION------
 
@@ -2851,8 +2829,6 @@ On instance:
      'user_id': 111}
 
 'cmarkers' is a required property
-
-deque([])
 
 ------END ERROR DESCRIPTION------
 

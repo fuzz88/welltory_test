@@ -42,8 +42,6 @@ def validate(filename, data, output):
                         output.write(str(error))
                         output.write('\n\n')
                         output.write(error.message)
-                        output.write('\n\n')
-                        output.write(str(error.path))
                         output.write('\n\n------END ERROR DESCRIPTION------')
                         output.write('\n\n')
 
