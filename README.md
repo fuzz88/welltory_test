@@ -56,7 +56,7 @@ None is not of type 'integer'
 #### [data/event/f5656ff6-29e1-46b0-8d8a-ff77f9cc0953.json](https://raw.githubusercontent.com/fuzz88/welltory_test/master/data/event/f5656ff6-29e1-46b0-8d8a-ff77f9cc0953.json)
 
 ```
-Данные соотвествуют схеме.
+Данные соответствуют схеме.
 ```
 
 #### [data/event/cc07e442-7986-4714-8fc2-ac2256690a90.json](https://raw.githubusercontent.com/fuzz88/welltory_test/master/data/event/cc07e442-7986-4714-8fc2-ac2256690a90.json)
@@ -203,7 +203,7 @@ On instance['type_ranges'][33]:
 #### [data/event/3b4088ef-7521-4114-ac56-57c68632d431.json](https://raw.githubusercontent.com/fuzz88/welltory_test/master/data/event/3b4088ef-7521-4114-ac56-57c68632d431.json)
 
 ```
-Данные соотвествуют схеме.
+Данные соответствуют схеме.
 ```
 
 #### [data/event/2e8ffd3c-dbda-42df-9901-b7a30869511a.json](https://raw.githubusercontent.com/fuzz88/welltory_test/master/data/event/2e8ffd3c-dbda-42df-9901-b7a30869511a.json)

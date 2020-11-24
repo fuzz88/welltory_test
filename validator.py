@@ -53,7 +53,7 @@ def validate(filename, data, output):
         output.write('\n\n')
         return
     if no_errors:
-        output.write('Данные соотвествуют схеме.')
+        output.write('Данные соответствуют схеме.')
     output.write('\n```')  # markdown codeblock ends
     output.write('\n\n')
 
