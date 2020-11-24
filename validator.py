@@ -15,17 +15,17 @@ def validate(filename, data, output):
     output.write('\n\n')
 
     output.write('```\n')  # markdown codeblock begins
-    # print(filename)
-    # print(data)
+
     try:
         event_type = data['event']
     except (KeyError, TypeError):
         output.write(
             'Не найден ключ "event". Данных о событии в файле нет,\nлибо ошибка в названии ключа.')
         output.write('\n')
-        output.write('\n```')  # markdown codeblock ends
+        output.write('\n```')  # markdown codeblock ends on file validation end
         output.write('\n\n')
         return
+
     try:
         with open(f'data/schema/{ event_type }.schema') as schema_file:
             schema = None
@@ -49,12 +49,13 @@ def validate(filename, data, output):
         output.write(
             f'Для события "{ event_type }" не найден файл со схемой.\nЛибо неизвестное событие, либо ошибка в названии схемы или события.')
         output.write('\n')
-        output.write('\n```')  # markdown codeblock ends
+        output.write('\n```')  # markdown codeblock ends on file validation end
         output.write('\n\n')
         return
+
     if no_errors:
         output.write('Данные соответствуют схеме.')
-    output.write('\n```')  # markdown codeblock ends
+    output.write('\n```')  # markdown codeblock ends on file validation end
     output.write('\n\n')
 
 
@@ -71,4 +72,4 @@ if __name__ == '__main__':
                     if json_data is not None:
                         validate(filename, json_data, output_file)
 
-    print(errors)  # it gave []. all file consist of valid json data. let's validate
+    print(errors)  # it gave []. all json files consist of valid json data. let's validate
