@@ -22,7 +22,7 @@ def validate(filename, data, output):
         event_type = data['event']
     except (KeyError, TypeError):
         output_as_code(
-            'Не найден ключ "event". Данных о событии в файле нет, либо ошибка в названии ключа.', output)
+            'Не найден ключ "event". Данных о событии в файле нет,\nлибо ошибка в названии ключа.', output)
         output.write('\n\n')
         return
     try:
@@ -33,7 +33,7 @@ def validate(filename, data, output):
                 print(e)
     except OSError:
         output_as_code(
-            f'Для события "{ event_type }" не найден файл со схемой. Либо неизвестное событие, либо ошибка в названии схемы или события.', output)
+            f'Для события "{ event_type }" не найден файл со схемой.\nЛибо неизвестное событие, либо ошибка в названии схемы или события.', output)
         output.write('\n\n')
 
 
