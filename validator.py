@@ -58,16 +58,17 @@ def validate(filename, data, output):
     output.write('\n\n')
 
 
-with open('README.md', 'w') as output_file:
-    for filename in glob.glob('data/event/*.json'):
-        with open(filename, 'r') as json_file:
-            json_data = None
-            try:
-                json_data = json.load(json_file)
-            except Exception as e:
-                errors.append(e)
-            finally:
-                if json_data is not None:
-                    validate(filename, json_data, output_file)
+if __name__ == '__main__':
+    with open('README.md', 'w') as output_file:
+        for filename in glob.glob('data/event/*.json'):
+            with open(filename, 'r') as json_file:
+                json_data = None
+                try:
+                    json_data = json.load(json_file)
+                except Exception as e:
+                    errors.append(e)
+                finally:
+                    if json_data is not None:
+                        validate(filename, json_data, output_file)
 
-print(errors)  # it gave []. all file consist of valid json data. let's validate
+    print(errors)  # it gave []. all file consist of valid json data. let's validate
