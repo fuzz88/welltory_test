@@ -24,7 +24,6 @@ def validate(filename, data, output):
     except (KeyError, TypeError):
         output.write(
             'Не найден ключ "event". Данных о событии в файле нет,\nлибо ошибка в названии ключа.')
-        output.write('\n')
         output.write('\n```')  # markdown codeblock ends on file validation end
         output.write('\n\n')
         return
@@ -52,7 +51,6 @@ def validate(filename, data, output):
     except OSError:
         output.write(
             f'Для события "{ event_type }" не найден файл со схемой.\nЛибо неизвестное событие, либо ошибка в названии схемы или события.')
-        output.write('\n')
         output.write('\n```')  # markdown codeblock ends on file validation end
         output.write('\n\n')
         return

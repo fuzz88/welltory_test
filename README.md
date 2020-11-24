@@ -3,7 +3,6 @@
 ```
 Для события "cmarker_calculated" не найден файл со схемой.
 Либо неизвестное событие, либо ошибка в названии схемы или события.
-
 ```
 
 #### [data/event/ffe6b214-d543-40a8-8da3-deb0dc5bbd8c.json](https://raw.githubusercontent.com/fuzz88/welltory_test/master/data/event/ffe6b214-d543-40a8-8da3-deb0dc5bbd8c.json)
@@ -50,7 +49,6 @@ None is not of type 'integer'
 ```
 Для события "label_       selected" не найден файл со схемой.
 Либо неизвестное событие, либо ошибка в названии схемы или события.
-
 ```
 
 #### [data/event/f5656ff6-29e1-46b0-8d8a-ff77f9cc0953.json](https://raw.githubusercontent.com/fuzz88/welltory_test/master/data/event/f5656ff6-29e1-46b0-8d8a-ff77f9cc0953.json)
@@ -135,7 +133,6 @@ None is not of type 'object'
 ```
 Для события "meditation_created" не найден файл со схемой.
 Либо неизвестное событие, либо ошибка в названии схемы или события.
-
 ```
 
 #### [data/event/297e4dc6-07d1-420d-a5ae-e4aff3aedc19.json](https://raw.githubusercontent.com/fuzz88/welltory_test/master/data/event/297e4dc6-07d1-420d-a5ae-e4aff3aedc19.json)
@@ -197,7 +194,6 @@ On instance['type_ranges'][33]:
 ```
 Не найден ключ "event". Данных о событии в файле нет,
 либо ошибка в названии ключа.
-
 ```
 
 #### [data/event/3b4088ef-7521-4114-ac56-57c68632d431.json](https://raw.githubusercontent.com/fuzz88/welltory_test/master/data/event/3b4088ef-7521-4114-ac56-57c68632d431.json)
@@ -211,7 +207,6 @@ On instance['type_ranges'][33]:
 ```
 Для события "meditation_created" не найден файл со схемой.
 Либо неизвестное событие, либо ошибка в названии схемы или события.
-
 ```
 
 #### [data/event/e2d760c3-7e10-4464-ab22-7fda6b5e2562.json](https://raw.githubusercontent.com/fuzz88/welltory_test/master/data/event/e2d760c3-7e10-4464-ab22-7fda6b5e2562.json)
@@ -2840,6 +2835,5 @@ On instance:
 ```
 Для события "meditation_created" не найден файл со схемой.
 Либо неизвестное событие, либо ошибка в названии схемы или события.
-
 ```
 
